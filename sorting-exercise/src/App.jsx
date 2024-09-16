@@ -14,7 +14,7 @@ function App() {
 
   const [ascendente, setAscendente] = useState(false);
   const [elemento, setElemento] = useState(null);
-
+  console.log(elemento);
 
   return (
     <>

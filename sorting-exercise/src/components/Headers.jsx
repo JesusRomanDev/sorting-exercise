@@ -10,10 +10,11 @@ const Headers = ({el, setAr, ar, ascendente, setAscendente, elemento, setElement
         setAscendente(!ascendente);
         setAr(resultado)
         setElemento(el.field);
+        console.log('dentro del handleClick');
         return resultado
 }
-console.log(elemento);
-console.log(handleClick);
+    console.log(elemento);
+    console.log('antes del return de Header');
   return (
     <>
         <h2 style={{display: "flex", flexDirection: "column"}}  onClick={handleClick}>{el.field} {el.field === elemento ? '+' : ''}</h2>
